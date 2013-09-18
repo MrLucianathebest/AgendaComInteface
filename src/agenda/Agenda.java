@@ -20,7 +20,7 @@ public class Agenda {
     
     public String adicionarContato(Contato novoContato){
         listaContatos.add(novoContato);
-        return "Adicionado na porra da minha Agenda!!!";
+        return "Adicionado na minha Agenda!!!";
     }
     
     

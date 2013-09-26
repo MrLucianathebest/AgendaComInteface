@@ -1,3 +1,5 @@
+package interfaces;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -8,9 +10,11 @@
  *
  * Created on 13/09/2013, 15:21:02
  */
-package agenda;
 
 import javax.swing.JOptionPane;
+
+import agenda.Agenda;
+import agenda.Contato;
 
 /**
  *
@@ -91,7 +95,7 @@ public class ContatoJframe extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
 private void jButtonGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGravarActionPerformed
-    Contato novoContato = new Contato(jTextNome.getText());
+    Contato novoContato = new Contato(jTextNome.getText(),jTextTelefone.getText());
     novoContato.setTelefone(jTextTelefone.getText());
     
     String mensagem = minhaAgenda.adicionarContato(novoContato);

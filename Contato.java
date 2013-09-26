@@ -15,14 +15,11 @@ public class Contato {
     private String telefone;
 
    //construtor
-   public Contato(String nome){
+   public Contato(String nome,String Telefone){
        this.setNome(nome);
-       
+       this.setTelefone(Telefone);
    }
-   
-    
-    
-    
+
     public String getTelefone() {
         return telefone;
     }
